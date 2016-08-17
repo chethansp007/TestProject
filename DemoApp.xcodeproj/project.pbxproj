@@ -74,7 +74,8 @@
 				D64527961D5C1982008F3D2A /* Sources */,
 				D64527971D5C1982008F3D2A /* Frameworks */,
 				D64527981D5C1982008F3D2A /* Resources */,
-				D66F7A7F1D61C8EC00C45E57 /* ShellScript */,
+				D66F7A7F1D61C8EC00C45E57 /* Run Script */,
+				D66F7A801D61D25700C45E57 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,7 +134,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D66F7A7F1D61C8EC00C45E57 /* ShellScript */ = {
+		D66F7A7F1D61C8EC00C45E57 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./BuildNo.sh\n";
+		};
+		D66F7A801D61D25700C45E57 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,7 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = ./MinorNo.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
